@@ -6,6 +6,12 @@
 int main(void)
 {
     // Clear the screen and go home
-    printf ("\033[2J\033[H");
+    putchar ('\33');
+    putchar ('[');
+    putchar ('2');
+    putchar ('J');
+    putchar ('\33');
+    putchar ('[');
+    putchar ('H');
     return 0;
 }
